@@ -9,6 +9,7 @@
     position: fixed;
     z-index: 99;
     background: white;
+    justify-content: space-between;
 }
 
 .header-logo {
@@ -93,12 +94,16 @@
     z-index: 1;
     top: 50px;
     padding: 30px 170px;
+    width: 100%;
 }
 
 .main-content {
     display: grid;
-    grid-template-columns: 15% 65% 20%;
-    width: 100%;
+    grid-template-columns: 75% 25%;
+    width: calc(100% - 150px);
+    position: relative;
+    left: 150px;
+
 }
 
 .link-img-category {
@@ -271,9 +276,7 @@
     background: var(--blue-dark);
 }
 
-.nav-categories {
+.left-content-categories {
     position: fixed;
-    left: 0;
     width: 150px;
-    margin: 0 170px;
 }
